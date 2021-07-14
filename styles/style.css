@@ -5,7 +5,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.first-part{
+.first-heading{
     display: flex;
     background-color: rgb(13, 13, 99);
 }
@@ -110,4 +110,100 @@ body{
 }
 .last-part p{
     font-size: 18px;
+}
+
+/* responsive for mobile device */
+@media  only screen and (max-width:688px) {
+/* ------first-part---- */
+    .first-heading{
+        flex-direction: column;
+    }
+    .first-img img{
+        padding-left: 0px;
+        width: 270px;
+        height: 259.17px;
+    }
+    .first-part{
+        width: 360px;
+        height: 695px;
+    }
+    .heading{
+        padding-left: 5px;
+    }
+    .heading h1{
+    
+        font-size: 36px;
+        color: #FFFFFF;
+    }
+
+    /* -----second-part--- */
+    .players{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .player-image img{
+        width: 290px;
+        height: 300px;
+    }
+    .players-article{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .player-article{
+        width: 300px;
+        height: 520px;
+        padding: 10px; 
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+         /* margin: 5px;  */
+         margin-bottom: 27px;
+         margin-right: 0px;
+    }
+
+    /* ---third-part----- */
+
+    .third-part{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .high-light{
+        flex-direction: column;
+    }
+    
+    .left{
+        margin-bottom: 50px;
+        width: 300px;
+        height: 309px;
+        /* width: 469px;
+        height: 309px; */
+    }
+    .left h1{
+        /* font-size: 48px; */
+        font-size: 20px;
+    }
+    .left p{
+        /* font-size: 16px;
+        color: #6C6C6C; */
+        font-size: 10px;
+    }
+    .right img{
+        margin-left: 0px;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* last-part------- */
+    .last-part{
+        /* align-items: center; */
+        text-align: left;
+        padding-left: 20px;
+    }
+    .last-part img{
+        width: 203px;
+        height: 110px;
+         /* text-align: left; */
+        /* align-content: center;  */
+    }
+   
 }
